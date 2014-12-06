@@ -1,0 +1,41 @@
+  h<html>
+<head><title>Keaton's Calculator</title>
+<script type="text/javascript" src="calc.js"></script>
+</head>
+<body onload="window.scr = document.getElementById('result');">
+<center>
+<table style="text-align:center">
+<tr>
+	<td colspan="4"><input value="" id="result"></td>
+</tr>
+<tr>
+	<td><input type="button" value="7" onclick="display(this.value)"></td>
+	<td><input type="button" value="8" onclick="display(this.value)"></td>
+	<td><input type="button" value="9" onclick="display(this.value)"></td>
+	<td><input type="button" value="/" onclick="divide()"></td>
+</tr>
+<tr>
+	<td><input type="button" value="4" onclick="display(this.value)"></td>
+	<td><input type="button" value="5" onclick="display(this.value)"></td>
+	<td><input type="button" value="6" onclick="display(this.value)"></td>
+	<td><input type="button" value="X" onclick="multiply()"></td>
+</tr>
+<tr>
+	<td><input type="button" value="1" onclick="display(this.value)"></td>
+	<td><input type="button" value="2" onclick="display(this.value)"></td>
+	<td><input type="button" value="3" onclick="display(this.value)"></td>
+	<td><input type="button" value="-" onclick="subtract()"></td>
+</tr>
+<tr>
+	<td><input type="button" value="0" onclick="display(this.value)"></td>
+	<td><input type="button" value="." onclick="display(this.value)"></td>
+	<td><input type="button" value="=" onclick="equals()"></td>
+	<td><input type="button" value="+" onclick="add()"></td>
+</tr>
+<tr><td colspan="4"><input value="Clear" type="button" onclick="clearit()"></td></tr>
+</table>
+	only supports two values
+	
+</center>
+</body>
+</html>
